@@ -1,0 +1,23 @@
+def GCD(a,b):
+    if a ==0 or b == 0:
+        return False
+    if b>a:
+        temp = a
+        a = b
+        b = temp
+    rem = a%b
+    if rem == 0:
+        return b
+    elif rem == 1:
+        return 1
+    else:
+        a = b
+        b = rem
+        return GCD(a,b)
+def LCM(a,b):
+    if GCD(a,b) == 1:
+        return a*b
+    elif GCD(a,b) == a or GCD(a,b) == b:
+        return a
+    else:
+        return b*(a//GCD(a,b))  
