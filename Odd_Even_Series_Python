@@ -10,9 +10,6 @@ else:
         numlist.append(i)
 print(numlist)
 
-
-
-
 def odd_numbers(startnum,endnum):
     '''a function that PRINTS odd numbers between any number and N'''
     oddlist = []
@@ -30,3 +27,21 @@ def even_numbers(startnum,endnum):
     for i in range(startnum,endnum+1,2):
         evenlist.append(i)
     return evenlist
+
+def sum_even_number(startnum,endnum):
+    ''' Write a function that calculates the sum of all even numbers between any two numbers'''
+    '''Uses the even_numbers function given above
+    numberlist = even_numbers(startnum,endnum)
+    numbersum = 0
+    for i in range(0,len(numberlist)):
+        numbersum = numbersum + numberlist[i]
+    return numbersum
+    
+ def odd_numbers_reverse(startnum,endnum):
+    '''a function that PRINTS odd numbers between any number and N in reverse order'''
+    oddlist = []
+    if startnum%2 == 0:
+        startnum = startnum+1
+    for i in range(startnum,endnum+1,2):
+        oddlist.append(i)
+    return oddlist[::-1]
