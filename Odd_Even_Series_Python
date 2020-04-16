@@ -9,3 +9,24 @@ else:
     for i in range(2,last_num+1,2):
         numlist.append(i)
 print(numlist)
+
+
+
+
+def odd_numbers(startnum,endnum):
+    '''a function that PRINTS odd numbers between any number and N'''
+    oddlist = []
+    if startnum%2 == 0:
+        startnum = startnum+1
+    for i in range(startnum,endnum+1,2):
+        oddlist.append(i)
+    return oddlist
+
+def even_numbers(startnum,endnum):
+    '''a function that PRINTS even numbers between any number and N'''
+    evenlist = []
+    if startnum%2 != 0:
+        startnum = startnum+1
+    for i in range(startnum,endnum+1,2):
+        evenlist.append(i)
+    return evenlist
