@@ -1,0 +1,11 @@
+#program to print even/odd number series from 1 to N
+series_type = input("Do you want an odd number or even number series?\nEnter 'O' for Odd and 'E' for Even:")
+last_num = int(input("What is the last number of the series?"))
+numlist = []
+if series_type.upper() == "O":
+    for i in range(1,last_num+1,2):
+        numlist.append(i)
+else:
+    for i in range(2,last_num+1,2):
+        numlist.append(i)
+print(numlist)
