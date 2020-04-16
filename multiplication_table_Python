@@ -1,0 +1,11 @@
+#program to print multiplication table m until n
+table_num = int(input('Which multiplication table do you want?'))
+stop_num = int(input('Until what number do you want the table?'))
+for i in range(1,stop_num+1):
+    print(f'{table_num} X {i} = {table_num*i}')
+    
+    
+#function to print multiplication table table_num until stop_num
+def mult_table(table_num,stop_num):
+    for i in range(1,stop_num+1):
+        print(f'{table_num} X {i} = {table_num*i}')
