@@ -1,0 +1,9 @@
+#program to print sum and product of the digits of a number
+num = input('Enter the number:')
+digitsum = 0
+digitprod = 1
+for i in range(0,len(num)):
+    digitsum = digitsum + int(num[i])
+    digitprod = digitprod * int(num[i])
+print(f'Sum of the digits: {digitsum}')
+print(f'Product of the digits: {digitprod}')
