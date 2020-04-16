@@ -1,0 +1,17 @@
+#Sum of any N numbers - Write a function that uses loops 
+# to calculate the sum of the any N numbers. Ex: 4+5+6+7+8=30
+
+def sum_of_number(startnum,endnum):
+    numbersum = 0
+    for i in range(startnum,endnum+1):
+        numbersum = numbersum + i
+    return numbersum
+
+#Product of any N numbers - Write a function that uses loops to calculate 
+# the sum of the any N numbers. Ex: 23456 = 720
+
+def prod_of_number(startnum,endnum):
+    numberprod = 1
+    for i in range(startnum,endnum+1):
+        numberprod = numberprod * i
+    return numberprod
