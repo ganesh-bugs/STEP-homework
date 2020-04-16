@@ -1,0 +1,8 @@
+def number_series(startnum,endnum,jumpnum):
+    '''a function that PRINTS every nth number between any two numbers
+    Example: (every 7th number between 1 and 100) 1,8,15,22,29,36,...
+    Example: (every 4th number between 3 and 15) 3 7 11 15    '''
+    numlist = []
+    for i in range(startnum,endnum+1,jumpnum):
+        numlist.append(i)
+    return numlist
